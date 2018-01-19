@@ -1,0 +1,24 @@
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/milestone/" }
+}
+
+apply plugin: 'java'
+
+jar {
+    baseName = 'multi-module-application'
+    version = '0.0.1-SNAPSHOT'
+}
+sourceCompatibility = 1.8
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.0.M7'
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.0.0.M7'
+
+    compile project(':library')
+}
