@@ -1,4 +1,4 @@
-package ml.ledv.library.db.utils;
+package ml.ledv.library.utils.factory;
 
 import ml.ledv.library.modules.db.entity.BaseEntity;
 

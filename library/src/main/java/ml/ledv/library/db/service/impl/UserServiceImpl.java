@@ -3,7 +3,7 @@ package ml.ledv.library.db.service.impl;
 import ml.ledv.library.modules.db.entity.impl.BookEntity;
 import ml.ledv.library.modules.db.entity.impl.UserEntity;
 import ml.ledv.library.db.service.UserService;
-import ml.ledv.library.db.utils.EntityCreator;
+import ml.ledv.library.utils.factory.EntityCreator;
 import ml.ledv.library.modules.db.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

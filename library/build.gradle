@@ -6,7 +6,13 @@ repositories {
 
 apply plugin: 'java'
 
+jar {
+    baseName = 'multi-module-application'
+    version = '0.0.1-SNAPSHOT'
+}
+
 sourceCompatibility = 1.8
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
@@ -37,9 +43,11 @@ dependencies {
     /*              Below are modules for connecting to DB.
      *
      * For correct working application you mast choose only one module:
+     *
      *  - mysql_module for forking with MySQL Database,
      *  - mongodb_module for working with MongoDb Database.
-     *  You also need to configure the application.properties, based on the module selection.
+     *
+     * You also need to configure the application.properties, based on the module selection.
      *
      */
 
