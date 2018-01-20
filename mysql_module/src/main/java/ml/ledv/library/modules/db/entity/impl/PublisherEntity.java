@@ -1,20 +1,20 @@
-package ml.ledv.library.db.entity.impl;
+package ml.ledv.library.modules.db.entity.impl;
 
-import ml.ledv.library.db.entity.BaseEntity;
+import ml.ledv.library.modules.db.entity.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-@Entity(name = "CONTENT")
-public class ContentEntity extends BaseEntity {
+@Entity(name = "PUBLISHER")
+public class PublisherEntity extends BaseEntity {
 
     @Column(name = "name")
     private String name;
 
-    public ContentEntity() {
+    public PublisherEntity() {
     }
 
-    public ContentEntity(final String id) {
+    public PublisherEntity(final String id) {
         super(id);
     }
 
@@ -28,7 +28,7 @@ public class ContentEntity extends BaseEntity {
 
     @Override
     public String toString() {
-        return "ContentEntity{" +
+        return "PublisherEntity{" +
                 "name='" + name + '\'' +
                 '}';
     }

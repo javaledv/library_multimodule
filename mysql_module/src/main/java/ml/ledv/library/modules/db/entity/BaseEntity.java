@@ -1,4 +1,4 @@
-package ml.ledv.library.db.entity;
+package ml.ledv.library.modules.db.entity;
 
 import org.hibernate.annotations.GenericGenerator;
 

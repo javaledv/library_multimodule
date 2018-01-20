@@ -1,7 +1,7 @@
-package ml.ledv.library.modules.repository;
+package ml.ledv.library.modules.db.repository;
 
-import ml.ledv.library.db.entity.impl.BookEntity;
-import ml.ledv.library.db.entity.impl.UserEntity;
+import ml.ledv.library.modules.db.entity.impl.BookEntity;
+import ml.ledv.library.modules.db.entity.impl.UserEntity;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.List;
