@@ -7,7 +7,6 @@ repositories {
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
-
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
@@ -35,5 +34,16 @@ dependencies {
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
     compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.3'
 
-    compile project(':mysql_module')
+    /*              Below are modules for connecting to DB.
+     *
+     * For correct working application you mast choose only one module:
+     *  - mysql_module for forking with MySQL Database,
+     *  - mongodb_module for working with MongoDb Database.
+     *  You also need to configure the application.properties, based on the module selection.
+     *
+     */
+
+    //compile project(':mysql_module')
+    compile project(':mongodb_module')
 }
+
