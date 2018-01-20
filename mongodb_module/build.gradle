@@ -4,11 +4,21 @@ repositories {
 }
 
 apply plugin: 'java'
+apply plugin: 'war'
+
+war {
+    baseName = 'library-module-db-mongo'
+    manifest {
+        attributes 'Main-Class': 'ml.ledv.spring.boot.apache.tiles.Main'
+    }
+}
 
 jar {
-    baseName = 'multi-module-application'
+    baseName = 'library-module-db-mongo'
     version = '0.0.1-SNAPSHOT'
 }
+
+
 sourceCompatibility = 1.8
 
 dependencies {
@@ -19,6 +29,4 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-mongodb
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.0.0.M7'
-
-    compile project(':library')
 }

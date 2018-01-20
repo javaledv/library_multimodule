@@ -1,3 +1,4 @@
+rootProject.name = 'library-multimodule'
 
 include 'mongodb_module'
 include 'mysql_module'

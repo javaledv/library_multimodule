@@ -7,15 +7,14 @@ apply plugin: 'java'
 apply plugin: 'war'
 
 war {
-    baseName: "library"
-    version: 1.0
+    baseName = 'library-multimodule-application'
     manifest {
-        attributes 'Main-Class': 'ml.ledv.spring.boot.apache.tiles.Main'
+        attributes 'Main-Class': 'ml.ledv.library.Main'
     }
 }
 
 jar {
-    baseName = 'multi-module-application'
+    baseName = 'library-multimodule-application'
     version = '0.0.1-SNAPSHOT'
 }
 
