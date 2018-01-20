@@ -51,7 +51,7 @@ dependencies {
      *
      * For correct working application you mast choose only one module:
      *
-     *  - mysql_module for forking with MySQL Database,
+     *  - mysql_module for working with MySQL Database,
      *  - mongodb_module for working with MongoDb Database.
      *
      * You also need to configure the application.properties, based on the module selection.
