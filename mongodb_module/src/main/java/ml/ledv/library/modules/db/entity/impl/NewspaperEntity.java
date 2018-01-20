@@ -2,21 +2,14 @@ package ml.ledv.library.modules.db.entity.impl;
 
 import ml.ledv.library.modules.db.entity.BaseEntity;
 
-import javax.persistence.*;
 import java.util.Date;
 
-@Entity(name = "NEWSPAPER")
 public class NewspaperEntity extends BaseEntity {
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "publish_date")
-    @Temporal(TemporalType.DATE)
     private Date date;
 
-    @ManyToOne
-    @JoinColumn(name = "publisherId")
     private PublisherEntity publisher;
 
     public NewspaperEntity() {

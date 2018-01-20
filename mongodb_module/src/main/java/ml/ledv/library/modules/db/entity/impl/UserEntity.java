@@ -2,16 +2,12 @@ package ml.ledv.library.modules.db.entity.impl;
 
 import ml.ledv.library.modules.db.entity.BaseEntity;
 
-import javax.persistence.*;
 import java.util.List;
 
-@Entity(name = "USER")
 public class UserEntity extends BaseEntity {
 
-    @Column(name = "name")
     private String login;
 
-    @OneToMany(fetch = FetchType.LAZY)
     private List<BookEntity> books;
 
     public UserEntity() {

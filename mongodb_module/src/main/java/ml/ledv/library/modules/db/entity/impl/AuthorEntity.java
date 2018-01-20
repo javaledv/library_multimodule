@@ -1,19 +1,11 @@
 package ml.ledv.library.modules.db.entity.impl;
 
-
-
 import ml.ledv.library.modules.db.entity.BaseEntity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-
-@Entity(name = "AUTHOR")
 public class AuthorEntity extends BaseEntity {
 
-    @Column(name = "firstName")
     private String firstName;
 
-    @Column(name = "lastName")
     private String lastName;
 
     public AuthorEntity() {

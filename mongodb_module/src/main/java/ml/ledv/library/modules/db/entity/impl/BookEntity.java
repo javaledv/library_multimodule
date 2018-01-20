@@ -2,30 +2,18 @@ package ml.ledv.library.modules.db.entity.impl;
 
 import ml.ledv.library.modules.db.entity.BaseEntity;
 
-import javax.persistence.*;
-
-@Entity(name = "BOOK")
 public class BookEntity extends BaseEntity {
 
-    @Column(name = "name")
     private String name;
 
-    @Column(name = "description")
     private String description;
 
-    @Column(name = "isbn", unique = true)
     private String isbn;
 
-    @ManyToOne
-    @JoinColumn(name = "authorId")
     private AuthorEntity author;
 
-    @ManyToOne
-    @JoinColumn(name = "contentId")
     private ContentEntity content;
 
-    @ManyToOne
-    @JoinColumn(name = "publisherId")
     private PublisherEntity publisher;
 
     public BookEntity() {
