@@ -7,6 +7,7 @@ import ml.ledv.library.modules.db.entity.impl.BookEntity;
 import ml.ledv.library.modules.db.entity.impl.UserEntity;
 import ml.ledv.library.db.service.BookService;
 import ml.ledv.library.db.service.UserService;
+import ml.ledv.library.utils.Routing;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ import java.util.Optional;
 
 
 @Controller
-@RequestMapping("/api/books")
+@RequestMapping(Routing.API_PATH + Routing.BOOKS_PATH)
 public class BookControllerApi {
 
     private UserService userService;
