@@ -1,10 +1,18 @@
-
 repositories {
     mavenCentral()
     maven { url "http://repo.spring.io/milestone/" }
 }
 
 apply plugin: 'java'
+apply plugin: 'war'
+
+war {
+    baseName: "library"
+    version: 1.0
+    manifest {
+        attributes 'Main-Class': 'ml.ledv.spring.boot.apache.tiles.Main'
+    }
+}
 
 jar {
     baseName = 'multi-module-application'
@@ -48,10 +56,8 @@ dependencies {
      *  - mongodb_module for working with MongoDb Database.
      *
      * You also need to configure the application.properties, based on the module selection.
-     *
      */
 
     //compile project(':mysql_module')
     compile project(':mongodb_module')
 }
-
