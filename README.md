@@ -85,14 +85,14 @@ the documentation included here:
 
 1. Tomcat configuration.
 
-    1.1 Enable the AJP connector in the /path/to/tomcat/conf/server.xml file like this:
+        1.1 Enable the AJP connector in the /path/to/tomcat/conf/server.xml file like this:
 
         <Connector port="8009" enableLookups="false" protocol="AJP/1.3" redirectPort="8443"/>    
 
-    1.2 Restart the Tomcat:
+        1.2 Restart the Tomcat:
 
-    $ sudo /path/to/tomcat/bin/shutdown.sh
-    $ sudo /path/to/tomcat/bin/startup.sh
+        $ sudo /path/to/tomcat/bin/shutdown.sh
+        $ sudo /path/to/tomcat/bin/startup.sh
 
 		
 		    APACHE2 CONFIGURING
