@@ -11,6 +11,7 @@ war {
     manifest {
         attributes 'Main-Class': 'ml.ledv.library.Main'
     }
+    exclude ('**/static/**')
 }
 
 jar {
@@ -37,13 +38,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-jasper
     compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.2'
-
-    // https://mvnrepository.com/artifact/org.webjars/bootstrap
-    compile group: 'org.webjars', name: 'bootstrap', version: '3.3.7'
-
-    // https://mvnrepository.com/artifact/org.webjars/jquery
-    compile group: 'org.webjars', name: 'jquery', version: '3.2.1'
-
+    
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
     compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: '2.9.3'
 
