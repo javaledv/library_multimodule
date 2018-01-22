@@ -14,12 +14,12 @@ Infrastructure : Tomcat + Apache, OS Ubuntu 16.04 LTS.
 
 	1.1 Download a binary distribution of Tomcat from:
 	
-	http://tomcat.apache.org/
+	    http://tomcat.apache.org/
 
 	1.2	Unpack the binary distribution so that it resides in its own
-    directory (conventionally named "apache-tomcat-[version]").
+        directory (conventionally named "apache-tomcat-[version]").
 
-    $ sudo tar -xvf apache-tomcat-N.N.N.tar.gz -C /path/to/tomcat/
+            $ sudo tar -xvf apache-tomcat-N.N.N.tar.gz -C /path/to/tomcat/
 
 "N" must be replaced with the current version number
 
@@ -85,16 +85,17 @@ the documentation included here:
 
 1. Tomcat configuration.
 
- 	1.1 Enable the AJP connector in the /path/to/tomcat/conf/server.xml file like this:
+    1.1 Enable the AJP connector in the /path/to/tomcat/conf/server.xml file like this:
 
-     <Connector port="8009" enableLookups="false" protocol="AJP/1.3" redirectPort="8443"/>    
+        <Connector port="8009" enableLookups="false" protocol="AJP/1.3" redirectPort="8443"/>    
 
     1.2 Restart the Tomcat:
 
     $ sudo /path/to/tomcat/bin/shutdown.sh
-	$ sudo /path/to/tomcat/bin/startup.sh
+    $ sudo /path/to/tomcat/bin/startup.sh
 
-		Apache2 configuration.
+		
+		    APACHE2 CONFIGURING
 
 
 1. Install Apach2:
@@ -167,7 +168,7 @@ the documentation included here:
 	$ gradle build
 
 			
-			 DEPLOYING WAR TO TOMCAT
+			DEPLOYING WAR TO TOMCAT
                                 STATIC CONTENT TO APACHE
 
 1. Addig Tomcat user for using tomcat-manger GUI: 
