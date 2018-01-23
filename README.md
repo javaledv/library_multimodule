@@ -226,7 +226,7 @@ https://httpd.apache.org/docs/2.4/install.html
     ```
 * Open Browser and follow the link:
 
-	localhost/
+	http://localhost/
 
 >You will see Library's Welcome Page.
 
