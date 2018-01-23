@@ -116,7 +116,7 @@ https://httpd.apache.org/docs/2.4/install.html
 
 	`$ sudo nano /etc/apache2/sites-available/library.com.conf`
 
-   ```
+   ```xml
    <VirtualHost *:80>
  
       ServerName library.ml
@@ -178,9 +178,9 @@ https://httpd.apache.org/docs/2.4/install.html
 	`$ sudo nano /path/to/tomcat/conf/tomcat-users.xml`
 
    * add the following line: 
-
-    `<user username="admin" password="admin" roles="manager-gui"/>`
-   
+    ```xml
+    <user username="admin" password="admin" roles="manager-gui"/>
+    ```
    * restart Tomcat:
    
     ```
