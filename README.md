@@ -1,11 +1,11 @@
 #Library is a Training Project.
 
-###DEPLOYING
+### DEPLOYING
 
 
 Infrastructure : Tomcat + Apache, OS Ubuntu 16.04 LTS.
 
-####CONFIGURING TOMCAT 
+#### CONFIGURING TOMCAT 
 	
 + Download and Install Apache Tomcat	
 
@@ -37,7 +37,7 @@ http://localhost8080/
 
 https://tomcat.apache.org/tomcat-9.0-doc/RUNNING.txt	
 	
-####CONFIGURING APACHE 
+#### CONFIGURING APACHE 
 
 * Download the latest release from: 
 
@@ -78,7 +78,7 @@ https://tomcat.apache.org/tomcat-9.0-doc/RUNNING.txt
 
 https://httpd.apache.org/docs/2.4/install.html
 	
-####APACHE AND TOMCAT INTEGRATION
+#### APACHE AND TOMCAT INTEGRATION
 
 
 * Tomcat configuration:
@@ -95,7 +95,7 @@ https://httpd.apache.org/docs/2.4/install.html
         $ sudo /path/to/tomcat/bin/startup.sh
         ```
 		
-####APACHE2 CONFIGURING
+#### APACHE2 CONFIGURING
 
 
 * Install Apach2:
@@ -153,7 +153,7 @@ https://httpd.apache.org/docs/2.4/install.html
 
 	`$ sudo service apache2 restart`
 
-####BUILDING PROJECT
+#### BUILDING PROJECT
 
 * Install gradle:
 
@@ -171,7 +171,7 @@ https://httpd.apache.org/docs/2.4/install.html
 	 $ gradle build
     ```
 			
-####DEPLOYING WAR TO TOMCAT AND STATIC CONTENT TO APACHE
+#### DEPLOYING WAR TO TOMCAT AND STATIC CONTENT TO APACHE
                                 
 * Adding Tomcat user for using tomcat-manger GUI: 
 	
