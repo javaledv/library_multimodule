@@ -185,7 +185,7 @@ https://httpd.apache.org/docs/2.4/install.html
    
     ```
     $ sudo /path/to/tomcat/bin/shutdown.sh
-	 $ sudo /path/to/tomcat/bin/startup.sh	
+	$ sudo /path/to/tomcat/bin/startup.sh	
     ```
 * Open the browser and follow the link: 
  
@@ -222,7 +222,7 @@ https://httpd.apache.org/docs/2.4/install.html
     
     ```
     $ sudo /path/to/tomcat/bin/shutdown.sh
-	 $ sudo /path/to/tomcat/bin/startup.sh
+	$ sudo /path/to/tomcat/bin/startup.sh
     ```
 * Open Browser and follow the link:
 
