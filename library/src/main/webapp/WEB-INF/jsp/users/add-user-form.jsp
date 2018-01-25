@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<h1>Add Book Form</h1>
+<h1>Add User Form</h1>
 
 <c:if test="${not empty error}">
     <p class="text-danger">${error}</p>
